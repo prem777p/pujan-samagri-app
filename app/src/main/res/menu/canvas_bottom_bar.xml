@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/header_bar"
+        android:title="@string/header"
+        android:icon="@drawable/icon_header"
+        android:color="@color/white"/>
+
+    <item
+        android:id="@+id/footer_bar"
+        android:title="@string/footer"
+        android:icon="@drawable/icon_footer"
+        android:color="@color/white"/>
+
+    <item
+        android:id="@+id/body_bar"
+        android:title="@string/content"
+        android:icon="@drawable/icon_content"
+        android:color="@color/white"/>
+
+</menu>

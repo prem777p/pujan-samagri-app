@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PujanSamagri" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black_white</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/x11_gray</item>
+
+        <!-- Secondary brand color. -->
+        <item name="android:textColorHint">@color/dark_liver_hint</item>
+        <item name="colorSecondary">@color/matte_black</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/design_default_color_error</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+</resources>

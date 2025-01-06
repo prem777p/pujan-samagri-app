@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/canvas_background"
+    tools:context=".activity.ParchaCanvas">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:statusBarForeground="@color/x11_gray">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="enterAlways"
+            app:titleEnabled="false"
+            app:toolbarId="@+id/toolbar">
+
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@color/x11_gray"
+                android:gravity="fill_vertical"
+                app:menu="@menu/canvas_topbar_action"
+                app:navigationIcon="@drawable/icon_arrow_back"
+                app:navigationIconTint="@color/white"
+                app:popupTheme="@style/Theme.Design.Light"
+                app:title="@string/app_name"
+                app:titleCentered="true"
+                app:titleTextColor="@color/white" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/canvas_container_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_40sdp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/x11_gray"
+        android:visibility="gone"
+        app:cnb_addBottomInset="true"
+        app:cnb_animationDuration="175"
+        app:cnb_iconSize="@dimen/_24sdp"
+        app:cnb_menuResource="@menu/canvas_bottom_bar"
+        app:cnb_orientationMode="horizontal"
+        app:cnb_radius="8dp"
+        app:cnb_textAppearance="@color/black"
+        app:cnb_unselectedColor="@color/quartz"
+        app:layout_behavior="com.prem.pujansamagri.customcompont.SynchronizedScrollBehavior" />
+
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/x11_gray"
+        android:paddingHorizontal="@dimen/_20sdp"
+        android:paddingVertical="@dimen/_10sdp">
+
+
+        <ImageButton
+            android:id="@+id/edit_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/ripple_icon_background"
+            android:contentDescription="@string/edit_content"
+            android:src="@drawable/icon_footer"
+            app:tint="@color/dark_liver_hint" />
+
+        <ImageButton
+            android:id="@+id/undo_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_icon_background"
+            android:contentDescription="@string/undo"
+            android:src="@drawable/icon_baseline_undo_24"
+            app:tint="@color/dark_liver_hint" />
+
+        <ImageButton
+            android:id="@+id/redo_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_icon_background"
+            android:contentDescription="@string/redo"
+            android:padding="1dp"
+            android:rotationY="200"
+            android:src="@drawable/icon_baseline_undo_24"
+            app:tint="@color/dark_liver_hint" />
+
+        <ImageButton
+            android:id="@+id/header_footer_edit_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/ripple_icon_background"
+            android:contentDescription="@string/edit_title_name_phone"
+            android:src="@drawable/icon_header"
+            app:tint="@color/dark_liver_hint" />
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

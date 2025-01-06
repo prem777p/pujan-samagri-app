@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    layout main color -->
+    <color name="card_background">@color/matte_black</color>
+
+<!--    icon color-->
+    <color name="regal_blue_davy_grey">@color/gray</color>
+
+<!--    button color-->
+    <color name="regal_blue_davy_matte_black">@color/matte_black</color>
+    <color name="vivid_auburn_x11_grey">@color/x11_gray</color>
+    <color name="vivid_auburn_matte_black">@color/matte_black</color>
+    <color name="jacarta_matte_black">@color/matte_black</color>
+
+    <!--    font color -->
+    <color name="regal_blue_x11_grey">@color/x11_gray</color>
+    <color name="white_x11_grey">@color/x11_gray</color>
+    <color name="dark_liver_hint_white">@color/white</color>
+    <color name="black_white">@color/white</color>
+    <color name="black_x11_grey">@color/x11_gray</color>
+    <color name="davy_grey_light_hint_x11_gray">@color/x11_gray</color>
+
+</resources>
