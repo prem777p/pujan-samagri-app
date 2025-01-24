@@ -2,6 +2,7 @@ package com.prem.pujansamagri.activity
 
 import android.app.Activity
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.os.Build
 import android.os.Bundle
 import android.text.Editable
@@ -37,6 +38,7 @@ class NewParche : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
         window.statusBarColor = getColor(R.color.jacarta_matte_black)
         binding = ActivityNewParcheBinding.inflate(layoutInflater)
         setContentView(binding.root)

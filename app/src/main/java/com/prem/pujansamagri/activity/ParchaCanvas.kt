@@ -3,6 +3,7 @@ package com.prem.pujansamagri.activity
 import android.app.Activity
 import android.app.Dialog
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -65,6 +66,7 @@ class ParchaCanvas : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCanvasBinding.inflate(layoutInflater)
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
         window.statusBarColor = getColor(R.color.x11_gray)
         setContentView(binding.root)
 

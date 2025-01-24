@@ -1,5 +1,6 @@
 package com.prem.pujansamagri.activity
 
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -22,6 +23,7 @@ class SamagriParcheList : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
         binding = ActivitySamagriParcheListBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

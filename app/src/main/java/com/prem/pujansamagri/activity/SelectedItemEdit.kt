@@ -2,6 +2,7 @@ package com.prem.pujansamagri.activity
 
 import android.app.Activity
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.content.res.Configuration
 import android.os.Build
 import android.os.Bundle
@@ -59,6 +60,7 @@ class SelectedItemEdit : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySelectedItemEditBinding.inflate(LayoutInflater.from(this))
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
         window.statusBarColor = TypedValue().data
         setContentView(binding.root)
 

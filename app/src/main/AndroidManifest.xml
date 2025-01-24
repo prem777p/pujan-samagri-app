@@ -37,24 +37,30 @@
 
         <activity
             android:name=".activity.SelectedItemEdit"
+            android:configChanges="orientation"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".activity.HeaderFooter"
+            android:configChanges="orientation"
             android:exported="false"
             android:theme="@style/Theme.PujanSamagri" />
         <activity
             android:name=".activity.ParchaCanvas"
+            android:configChanges="orientation"
             android:exported="false" />
         <activity
             android:name=".activity.NewParche"
+            android:configChanges="orientation"
             android:exported="false" />
         <activity
             android:name=".activity.SamagriParcheList"
             android:exported="false"
+            android:configChanges="orientation"
             android:theme="@style/Theme.PujanSamagri" />
         <activity
             android:name=".activity.Home"
+            android:configChanges="orientation"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,6 +1,7 @@
 package com.prem.pujansamagri.activity
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -16,6 +17,7 @@ class HeaderFooter : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
         binding = ActivityHeaderFooterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
